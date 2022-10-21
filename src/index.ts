@@ -1,4 +1,5 @@
 import express from 'express';
+import cors from 'cors';
 import { OAuth2Server } from 'oauth2-mock-server';
 
 const OAuth2ServerPort = parseInt(process.env.OAuth2ServerPort || '3001');
@@ -17,6 +18,9 @@ const app = express();
 
 // add json middleware
 app.use(express.json());
+
+// enable ALL CORS requests
+app.use(cors());
 
 app.post('/jwt', async function (req, res) {
   const jwt = await server.issuer.buildToken({
