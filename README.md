@@ -22,8 +22,8 @@ You can set the following environment variables to configure the servers:
 
 | Name | Description | Default |
 |---|---|---|
-| `OAuth2ServerPort` | The port of the OAuth2 server | `3001` |
-| `TokenProviderPort` | The port of the token provider server | `3002` |
+| `OAUTH2_SERVER_PORT` | The port of the OAuth2 server | `3200` |
+| `TOKEN_PROVIDER_PORT` | The port of the token provider server | `3201` |
 
 ## Token Provider server
 

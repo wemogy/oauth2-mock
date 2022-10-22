@@ -2,8 +2,8 @@ import express from 'express';
 import cors from 'cors';
 import { OAuth2Server } from 'oauth2-mock-server';
 
-const OAuth2ServerPort = parseInt(process.env.OAuth2ServerPort || '3001');
-const TokenProviderPort = parseInt(process.env.TokenProviderPort || '3002');
+const OAuth2ServerPort = parseInt(process.env.OAUTH2_SERVER_PORT || '3200');
+const TokenProviderPort = parseInt(process.env.TOKEN_PROVIDER_PORT || '3201');
 
 const server = new OAuth2Server();
 
@@ -34,4 +34,4 @@ app.post('/jwt', async function (req, res) {
 app.listen(TokenProviderPort);
 
 console.log('Issuer URL:', server.issuer.url); // -> http://localhost:{OAuth2ServerPort}
-console.log('Token Provider URL:', `http://localhost:${TokenProviderPort}`); // -> http://localhost:3000
+console.log('Token Provider URL:', `http://localhost:${TokenProviderPort}`); // -> http://localhost:3201
