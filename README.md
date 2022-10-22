@@ -1,4 +1,4 @@
-# ![wemogy logo](https://wemogyimages.blob.core.windows.net/logos/wemogy-github-tiny.png) OAuth2 mock
+# ![wemogy logo](https://wemogyimages.blob.core.windows.net/logos/wemogy-github-tiny.png) OAuth2.0 Mock Server
 
 ## Get it running
 
