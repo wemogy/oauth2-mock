@@ -2,13 +2,15 @@
 
 ## Get it running
 
-### Install all dependencies
+Clone the repository.
+
+Install all dependencies
 
 ```bash
 yarn install
 ```
 
-### Start the servers
+Start the servers
 
 ```bash
 yarn start
