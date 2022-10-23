@@ -47,8 +47,14 @@ You can set the following environment variables to configure the servers:
 
 ## Docker
 
-Build the Docker container:
+### Build the Docker container
 
 ```bash
 docker build -t oauth2-mock .
+```
+
+### Run the Docker container
+
+```bash
+docker run -p 3200:3200 -p 3201:3201 -d oauth2-mock
 ```
