@@ -22,6 +22,7 @@ You can set the following environment variables to configure the servers:
 
 | Name | Description | Default |
 |---|---|---|
+| `OAUTH2_SERVER_HOST` | The host of the OAuth2 server | `localhost` |
 | `OAUTH2_SERVER_PORT` | The port of the OAuth2 server | `3200` |
 | `TOKEN_PROVIDER_PORT` | The port of the token provider server | `3201` |
 
@@ -42,4 +43,12 @@ You can set the following environment variables to configure the servers:
         "spaceblocks_stage_id": "e2esc01"
     }
 }
+```
+
+## Docker
+
+Build the Docker container:
+
+```bash
+docker build -t oauth2-mock .
 ```
