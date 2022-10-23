@@ -39,6 +39,6 @@ runs:
       with:
         file: Dockerfile
         push: ${{ inputs.push }}
-        tags: ${{ inputs.container-registry-server }}/subscriptions-main:${{ inputs.version }}
+        tags: ${{ inputs.container-registry-server }}/oauth2-mock:${{ inputs.version }}
 
     # Add build steps for additional containers here...
