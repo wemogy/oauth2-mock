@@ -28,17 +28,15 @@ runs:
   steps:
     - name: Login to Azure Container Registry
       if: inputs.push == 'true'
-      uses: docker/login-action@v1
+      uses: docker/login-action@v2
       with:
         registry: ${{ inputs.container-registry-server }}
         username: ${{ inputs.container-registry-username }}
         password: ${{ inputs.container-registry-password }}
 
     - name: Build and push Container image
-      uses: docker/build-push-action@v2.5.0
+      uses: docker/build-push-action@v3
       with:
-        build-args: |
-          NUGET_TOKEN=${{ inputs.wemogy-packages-token }}
         file: Dockerfile
         push: ${{ inputs.push }}
         tags: ${{ inputs.container-registry-server }}/subscriptions-main:${{ inputs.version }}
