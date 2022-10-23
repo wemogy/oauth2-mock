@@ -37,7 +37,7 @@ jobs:
       - name: Build & Push Containers
         uses: ./.github/actions/containers
         with:
-          container-registry-registry: ${{ secrets.CONTAINER_REGISTRY_LOGIN_SERVER }}
+          container-registry-server: ${{ secrets.CONTAINER_REGISTRY_LOGIN_SERVER }}
           container-registry-username: ${{ secrets.CONTAINER_REGISTRY_USERNAME }}
           container-registry-password: ${{ secrets.CONTAINER_REGISTRY_PASSWORD }}
           wemogy-packages-token: ${{ secrets.WEMOGY_PACKAGES_TOKEN }}
