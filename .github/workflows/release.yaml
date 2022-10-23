@@ -35,7 +35,6 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Build & Push Containers
-        if: needs.changes.outputs.src == 'true'
         uses: ./.github/actions/containers
         with:
           container-registry-registry: ${{ secrets.CONTAINER_REGISTRY_LOGIN_SERVER }}
