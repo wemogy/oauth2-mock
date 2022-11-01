@@ -1,5 +1,7 @@
 # ![wemogy logo](https://wemogyimages.blob.core.windows.net/logos/wemogy-github-tiny.png) OAuth2.0 Mock Server
 
+This project uses the [axa-group/oauth2-mock-server](https://github.com/axa-group/oauth2-mock-server) repository at its core.
+
 ## Get it running
 
 Clone the repository.
