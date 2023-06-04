@@ -1,8 +1,18 @@
 # ![wemogy logo](https://wemogyimages.blob.core.windows.net/logos/wemogy-github-tiny.png) OAuth2.0 Mock Server
 
+[![Docker](https://img.shields.io/badge/Docker%20Hub-oauth2--mock-blue.svg?logo=docker)](https://hub.docker.com/repository/docker/wemogy/oauth2-mock)
+
 This project uses the [axa-group/oauth2-mock-server](https://github.com/axa-group/oauth2-mock-server) repository at its core.
 
 ## Get it running
+
+### Docker
+
+```bash
+docker run -p 3200:3200 -p 3201:3201 wemogy/oauth2-mock
+```
+
+### Code
 
 Clone the repository.
 
