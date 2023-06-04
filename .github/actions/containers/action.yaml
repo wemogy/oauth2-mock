@@ -2,15 +2,9 @@ name: "Containers"
 description: "Builds and optionally pushes container images"
 
 inputs:
-  container-registry-username:
-    description: "Container registry username"
+  docker-hub-token:
+    description: "Docke Hub Access Token"
     required: false
-  container-registry-password:
-    description: "Container registry password"
-    required: false
-  wemogy-packages-token:
-    description: "The token to use to authenticate with the wemogy-packages service"
-    required: true
   version:
     description: "The version of the container image"
     required: true
@@ -27,8 +21,8 @@ runs:
       uses: docker/login-action@v2
       with:
         username: wemogy
-        password: ${{ secrets.DOCKER_HUB_TOKEN }}
- 
+        password: ${{ inputs.docker-hub-token }}
+
     - name: Build and push Container image
       uses: docker/build-push-action@v3
       with:
