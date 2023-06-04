@@ -13,7 +13,6 @@ jobs:
       src: ${{ steps.changes.outputs.src }}
     steps:
       - uses: actions/checkout@v3
-
       - uses: dorny/paths-filter@v2
         id: changes
         with:
@@ -31,7 +30,5 @@ jobs:
         if: needs.changes.outputs.src == 'true'
         uses: ./.github/actions/containers
         with:
-          container-registry-server: test
-          wemogy-packages-token: ${{ secrets.WEMOGY_PACKAGES_TOKEN }}
           version: 0.0.0-test
           push: false
