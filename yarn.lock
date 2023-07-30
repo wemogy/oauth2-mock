@@ -104,7 +104,7 @@ basic-auth@^2.0.1:
   dependencies:
     safe-buffer "5.1.2"
 
-body-parser@1.20.1, body-parser@^1.20.0:
+body-parser@1.20.1:
   version "1.20.1"
   resolved "https://registry.yarnpkg.com/body-parser/-/body-parser-1.20.1.tgz#b1812a8912c195cd371a3ee5e66faa2338a5c668"
   integrity sha512-jWi7abTbYwajOytWCQc37VulmWiRae5RyTpaCyDcS5/lMdtwSz5lOpDE67srw/HYe35f1z3fDQw+3txg7gNtWw==
@@ -337,7 +337,7 @@ etag@~1.8.1:
   resolved "https://registry.yarnpkg.com/etag/-/etag-1.8.1.tgz#41ae2eeb65efa62268aebfea83ac7d79299b0887"
   integrity sha512-aIL5Fx7mawVa300al2BnEE4iNvo1qETxLrPI/o05L7z6go7fCw1J6EQmbK4FmJ2AS7kgVF/KEZWufBfdClMcPg==
 
-express@^4.18.1, express@^4.18.2:
+express@^4.18.2:
   version "4.18.2"
   resolved "https://registry.yarnpkg.com/express/-/express-4.18.2.tgz#3fabe08296e930c796c19e3c516979386ba9fd59"
   integrity sha512-5/PsL6iGPdfQ/lKM1UuielYgv3BUoJfz1aUwU9vHZ+J7gyvwdQXFEBIEIaxeGf0GIcreATNyBExtalisDbuMqQ==
@@ -463,10 +463,10 @@ is-core-module@^2.9.0:
   dependencies:
     has "^1.0.3"
 
-jose@^4.10.0:
-  version "4.10.3"
-  resolved "https://registry.yarnpkg.com/jose/-/jose-4.10.3.tgz#36ffeae395f14624a99961db6ada957476eccb19"
-  integrity sha512-3S4wQnaoJKSAx9uHSoyf8B/lxjs1qCntHWL6wNFszJazo+FtWe+qD0zVfY0BlqJ5HHK4jcnM98k3BQzVLbzE4g==
+jose@^4.14.4:
+  version "4.14.4"
+  resolved "https://registry.yarnpkg.com/jose/-/jose-4.14.4.tgz#59e09204e2670c3164ee24cbfe7115c6f8bff9ca"
+  integrity sha512-j8GhLiKmUAh+dsFXlX1aJCbt5KMibuKb+d7j1JaOJG6s2UjX1PQlW+OKB/sD4a/5ZYF4RcmYmLSndOoU3Lt/3g==
 
 jsonc-parser@^3.2.0:
   version "3.2.0"
@@ -545,16 +545,15 @@ negotiator@0.6.3:
   resolved "https://registry.yarnpkg.com/negotiator/-/negotiator-0.6.3.tgz#58e323a72fedc0d6f9cd4d31fe49f51479590ccd"
   integrity sha512-+EUsqGPLsM+j/zdChZjsnX51g4XrHFOIXwfnCVPGlQk/k5giakcKsuxCObBRu6DSm9opw/O6slWbJdghQM4bBg==
 
-oauth2-mock-server@^5.0.1:
-  version "5.0.1"
-  resolved "https://registry.yarnpkg.com/oauth2-mock-server/-/oauth2-mock-server-5.0.1.tgz#ee5ab6f36e400c84457baddc4fee5afaf6e9c531"
-  integrity sha512-BbpcgQkP+kKM6XJWAEhP1UQSColU/PdHR0KPC4zqEm/eUZr5PklcmbfZOKmtZFWv/6T2kLLFsH+NEsEitByXuQ==
+oauth2-mock-server@^6.0.0:
+  version "6.0.0"
+  resolved "https://registry.yarnpkg.com/oauth2-mock-server/-/oauth2-mock-server-6.0.0.tgz#b922a4c76eabfcbb4d56ad638e01f5f50c11ed71"
+  integrity sha512-Btw21gMd8vUzTt6VzKHkkJDkd+wPynTRxsR/DaXNe3hBUF+o+4hmiLlyKo/9Zb1TxWjnajfL2HD2OXOZyjZWsQ==
   dependencies:
     basic-auth "^2.0.1"
-    body-parser "^1.20.0"
     cors "^2.8.5"
-    express "^4.18.1"
-    jose "^4.10.0"
+    express "^4.18.2"
+    jose "^4.14.4"
     lodash.isplainobject "^4.0.6"
     uuid "^9.0.0"
 
