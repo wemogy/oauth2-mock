@@ -34,7 +34,7 @@ You can set the following environment variables to configure the servers:
 
 | Name | Description | Default |
 |---|---|---|
-| `OAUTH2_SERVER_HOST` | The host of the OAuth2 server | `localhost` |
+| `OAUTH2_SERVER_HOST` | The host of the OAuth2 server | `0.0.0.0` |
 | `OAUTH2_SERVER_PORT` | The port of the OAuth2 server | `3200` |
 | `TOKEN_PROVIDER_PORT` | The port of the token provider server | `3201` |
 
